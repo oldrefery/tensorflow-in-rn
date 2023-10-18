@@ -9,10 +9,17 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "1.18.2",
+    "@tensorflow/tfjs": "^4.12.0",
     "expo": "~49.0.13",
+    "expo-camera": "~13.4.4",
+    "expo-gl": "~13.0.1",
+    "expo-gl-cpp": "^11.4.0",
+    "expo-image-picker": "~14.3.2",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",
-    "react-native": "0.72.5"
+    "react-native": "0.72.5",
+    "react-native-fs": "^2.20.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

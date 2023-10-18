@@ -15,5 +15,7 @@ export const styles = StyleSheet.create({
   },
   resultContainer: {
     flex: 1,
+    gap: 10,
+    marginTop: 30,
   },
 });

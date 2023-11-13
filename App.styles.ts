@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     padding: 32,
   },
   image: {
-    width: 250,
+    width: "100%",
     height: 250,
     borderRadius: 10,
   },
@@ -17,5 +17,9 @@ export const styles = StyleSheet.create({
     flex: 1,
     gap: 10,
     marginTop: 30,
+  },
+  status: {
+    color: "white",
+    fontSize: 24,
   },
 });

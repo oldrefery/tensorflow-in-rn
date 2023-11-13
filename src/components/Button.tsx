@@ -4,13 +4,28 @@ import {
   TouchableOpacity,
   TouchableOpacityProps,
 } from "react-native";
+import { Status } from "../constants/others";
 
 type ButtonProps = TouchableOpacityProps & {
   title: string;
+  status?: Status;
 };
-export const Button = ({ title, ...rest }: ButtonProps) => {
+export const Button = ({
+  title,
+  status = Status.READY,
+  ...rest
+}: ButtonProps) => {
+  const isDisabled = status === Status.BUSY;
   return (
-    <TouchableOpacity {...rest} style={styles.container}>
+    <TouchableOpacity
+      {...rest}
+      disabled={isDisabled}
+      style={
+        isDisabled
+          ? [styles.container, { backgroundColor: "grey" }]
+          : styles.container
+      }
+    >
       <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
